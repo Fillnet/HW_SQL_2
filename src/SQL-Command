@@ -32,7 +32,7 @@ SELECT first_name AS "Имя", SUM(age) AS "Суммарный возраст"
 FROM employee
 GROUP BY first_name;
 //Выведите имя и самый юный возраст, соответствующий имени.
-SELECT first_name, MIN(age) AS "Минимальный возраст"
+SELECT first_name AS "Имя", MIN(age) AS "Минимальный возраст"
 FROM employee
 GROUP BY first_name;
 //Выведите имя и максимальный возраст только для неуникальных имен. Результат отсортируйте по возрасту в порядке возрастания.

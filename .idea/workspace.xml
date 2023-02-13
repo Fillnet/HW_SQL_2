@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07a493ee-c9b1-4b96-8cba-2a0ab5edd750" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SQL-Command" afterDir="false" />
+    <list default="true" id="07a493ee-c9b1-4b96-8cba-2a0ab5edd750" name="Changes" comment="Выборка данных и вложенные запросы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +39,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -50,11 +54,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676311049165</updated>
-      <workItem from="1676311050353" duration="1816000" />
+      <workItem from="1676311050353" duration="2928000" />
     </task>
+    <task id="LOCAL-00001" summary="Выборка данных и вложенные запросы">
+      <created>1676313097351</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676313097351</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Выборка данных и вложенные запросы">
+      <created>1676313290457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676313290457</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Выборка данных и вложенные запросы">
+      <created>1676313330063</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676313330063</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Выборка данных и вложенные запросы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выборка данных и вложенные запросы" />
   </component>
 </project>
