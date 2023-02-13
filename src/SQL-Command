@@ -39,10 +39,10 @@ GROUP BY first_name;
 WITH cte AS(
 SELECT first_name AS "Имя", MAX(age) AS "Максимальный возраст"
 FROM employee
-GROUP BY first_name
+GROUP BY "Имя"
 HAVING COUNT(*) >1
 )
-SELECT first_name, "Максимальный возраст"
+SELECT "Имя", "Максимальный возраст"
 FROM cte
 ORDER BY "Максимальный возраст";
 
