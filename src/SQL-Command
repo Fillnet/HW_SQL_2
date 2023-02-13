@@ -37,7 +37,7 @@ FROM employee
 GROUP BY first_name;
 //Выведите имя и максимальный возраст только для неуникальных имен. Результат отсортируйте по возрасту в порядке возрастания.
 WITH cte AS(
-SELECT first_name, MAX(age) AS "Максимальный возраст"
+SELECT first_name AS "Имя", MAX(age) AS "Максимальный возраст"
 FROM employee
 GROUP BY first_name
 HAVING COUNT(*) >1
