@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07a493ee-c9b1-4b96-8cba-2a0ab5edd750" name="Changes" comment="Выборка данных и вложенные запросы">
-      <change afterPath="$PROJECT_DIR$/src/SQL_COMMAND_TABLE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="07a493ee-c9b1-4b96-8cba-2a0ab5edd750" name="Changes" comment="Работа с несколькими таблицами" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676311049165</updated>
       <workItem from="1676311050353" duration="3619000" />
-      <workItem from="1676655360286" duration="2244000" />
+      <workItem from="1676655360286" duration="2563000" />
     </task>
     <task id="LOCAL-00001" summary="Выборка данных и вложенные запросы">
       <created>1676313097351</created>
@@ -98,14 +95,33 @@
       <option name="project" value="LOCAL" />
       <updated>1676315309385</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Работа с несколькими таблицами">
+      <created>1676658518445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676658518445</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Выборка данных и вложенные запросы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выборка данных и вложенные запросы" />
+    <MESSAGE value="Работа с несколькими таблицами" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с несколькими таблицами" />
   </component>
 </project>
