@@ -1,0 +1,56 @@
+//Задание 1
+//1.Создайте таблицу city с колонками city_id и city_name.
+CREATE TABLE city (
+    city_id SERIAL PRIMARY KEY,
+    city_name VARCHAR(255) NOT NULL
+);
+//2.Добавьте в таблицу employee колонку city_id.
+ALTER TABLE employee ADD COLUMN city_id INTEGER;
+//3.Назначьте ее внешним ключом и свяжите с таблицей city.
+ALTER TABLE employee
+ADD CONSTRAINT fk_employee_city
+FOREIGN KEY (city_id)
+REFERENCES city(city_id);
+//4.Заполните таблицу city и назначьте работникам соответствующие города.
+INSERT INTO city (city_id, city_name)
+VALUES (1, 'Москва'),
+       (2, 'Санкт-Петербург'),
+       (3, 'Новосибирск'),
+       (4, 'Екатеринбург'),
+       (5, 'Красноярск');
+//5.Заполните таблицу city и назначьте работникам соответствующие города.
+skypro=# UPDATE employee
+skypro-# SET city_id = 1
+skypro-# WHERE id = 1;
+skypro=# UPDATE employee
+skypro-# SET city_id = 2
+skypro-# WHERE id = 2;
+skypro=# UPDATE employee
+skypro-# SET city_id = 3
+skypro-# WHERE id = 3;
+skypro=# UPDATE employee
+skypro-# SET city_id = 4
+skypro-# WHERE id = 4;
+skypro=# UPDATE employee
+skypro-# SET city_id = 5
+skypro-# WHERE id = 5;
+//Задание 2
+//1.Получите имена и фамилии сотрудников, а также города, в которых они проживают.
+skypro=# SELECT first_name AS "Имя", last_name AS "Фамилия", city_name AS "Город"
+skypro-# FROM employee
+skypro-# JOIN city ON employee.city_id = city.city_id;
+//2.Получите города, а также имена и фамилии сотрудников, которые в них проживают.
+//Если в городе никто из сотрудников не живет, то вместо имени должен стоять null.
+skypro=# SELECT e.first_name, e.last_name, c.city_name
+skypro-# FROM employee e
+skypro-# LEFT JOIN city c ON e.city_id = c.city_id;
+//3.Получите имена всех сотрудников и названия всех городов.
+//Если в городе не живет никто из сотрудников, то вместо имени должен стоять null.
+//Аналогично, если города для какого-то из сотрудников нет в списке, так же должен быть получен null.
+skypro=# SELECT e.first_name, e.last_name, c.city_name
+skypro-# FROM employee e
+skypro-# LEFT JOIN city c ON e.city_id = c.city_id;
+//4.Получите таблицу, в которой каждому имени должен соответствовать каждый город.
+skypro=# SELECT first_name, last_name, city_name
+skypro-# FROM employee
+skypro-# CROSS JOIN city;
